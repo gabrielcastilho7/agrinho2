@@ -1,43 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="energia.css"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energia Rural e Renovável</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="energia.css" />
 </head>
 <body>
-      <!--Apresentação do tema-->
-      <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Festejando Conexão Campo Cidade</h3>
+
+  <!-- Botão voltar -->
+<a href="index.html" class="bloco-voltar">VOLTAR</a>
+
+  <!-- Cabeçalho -->
+  <section class="cabecalho">
+    <h1>AGRINHO</h1>
+    <h3>Energia no Campo</h3>
+  </section>
+
+  <!-- Conteúdo principal -->
+  <div class="container pt-5 pb-5">
+
+    <!-- Seção Exemplo -->
+    <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>Energia Solar</h3>
+          <p>
+A energia solar tem se consolidado como uma alternativa sustentável e estratégica para o meio rural. Os painéis solares proporcionam maior autonomia energética aos produtores, diminuem a dependência da rede elétrica convencional e contribuem diretamente para a preservação ambiental.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+Apesar das vantagens, muitos agricultores ainda enfrentam entraves como burocracias e taxas que dificultam a adesão à tecnologia. Mesmo assim, o uso da energia solar no campo representa um passo importante para reduzir a pressão sobre o sistema elétrico urbano e para promover uma produção agrícola mais limpa e eficiente.
+
+          </div>
+        </div>
+        <img src="assets/image/solar.png" class="img-fluid rounded" alt="Painéis solares no campo" />
+      </div>
     </section>
 
-    <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
-                    </li>
-                </ul>
-            </div>
+        <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>Energia de Hidrelétricas</h3>
+          <p>
+A maior parte da eletricidade no Brasil é gerada por hidrelétricas, muitas delas localizadas em regiões rurais. Ironicamente, os próprios moradores dessas áreas frequentemente enfrentam dificuldades para ter acesso fácil ou a preços justos a essa energia.
+
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+Apesar de ser considerada uma fonte limpa, a forma como é distribuída e taxada torna seu custo elevado — tanto para quem consome quanto para quem vive nas proximidades das usinas. Isso evidencia uma contradição: o campo, mesmo sendo produtor de energia, continua sentindo os efeitos da desigualdade no acesso a ela.
+
+          </div>
         </div>
-    </nav>
+        <img src="assets/image/hidro.png" class="img-fluid rounded" alt="Painéis solares no campo" />
+      </div>
+    </section>
+
+        <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>Energia Eólica</h3>
+          <p>
+A energia eólica tem se destacado como uma alternativa sustentável e promissora para regiões rurais, aproveitando a força constante dos ventos para gerar eletricidade. Pequenas turbinas eólicas instaladas em propriedades rurais aumentam a autonomia energética e ajudam a diversificar as fontes de energia no campo.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+No entanto, desafios como o custo inicial dos equipamentos, a necessidade de manutenção e a variabilidade dos ventos ainda limitam seu uso mais amplo. Mesmo assim, a energia eólica contribui para a redução da dependência das redes elétricas convencionais, colaborando para um futuro mais sustentável no meio rural.
+          </div>
+        </div>
+        <img src="assets/image/eolica.png" class="img-fluid rounded" alt="Painéis solares no campo" />
+      </div>
+    </section>
+
+    <!-- Outras seções podem seguir o mesmo padrão -->
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo-cidade.</p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function mostrarTexto(el) {
+      const parent = el.closest('section').querySelector('.extra-text');
+      parent.style.display = 'block';
+      el.style.display = 'none';
+    }
+  </script>
 
 </body>
 </html>

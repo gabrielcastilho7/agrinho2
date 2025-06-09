@@ -1,134 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrinho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!--Apresentação do tema-->
-    <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Festejando Conexão Campo Cidade</h3>
-    </section>
+  <!-- Apresentação -->
+  <section class="cabecalho">
+    <h1>AGRINHO</h1>
+    <h3>Do Campo Para A Cidade</h3>
+  </section>
 
-    <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Primeira seção a ser dividida-->
+  <!-- Navegação -->
+  <nav class="bg-success py-3">
     <div class="container">
-        <div class="row pt-5">
-            <div class="col ">
-                <div>
-                    <h2>O que podemos falar sobre a zona rural?</h2>
-                    <p class="alinha">Fica claro que, muitas vezes, a desinformação sobre os produtos gerados no campo
-                        impede que os
-                        moradores das cidades compreendam todo o valor e o esforço envolvidos na produção rural. Essa
-                        falta
-                        de conhecimento pode gerar preconceitos, desvalorização dos alimentos e até desperdício.
-                        Promover a
-                        conexão entre o campo e a cidade, por meio de campanhas educativas e feiras de produtores, é
-                        fundamental para valorizar o trabalho do agricultor e incentivar o consumo consciente.
-                    </p>
-                </div>
-            </div>
-            <div class="col text-center">
-                <div>
-                    <img class="img-agro br-3" src="./assets/image/agro.png" alt="Imagem representativa de plantação.">
-                </div>
-            </div>
-        </div>
-        <div class="row pt-5">
-            <h3 class="text-center pb-3">Saiba um pouco mais sobre cada área.</h3>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/energia sus (1).png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Acessibilidade a água</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais sobre:</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/energia sus.png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Energia rural</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais sobre:</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/agro.png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Produção e industrialização</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais sobre:</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="carouselExample" class="carousel slide pt-4 pb-3">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/image/Energy (1).gif" class="img-slide d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/image/Energy.gif" class=" img-slide d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+      <div class="d-flex justify-content-between flex-wrap">
+        <a href="agua.html" class="btn text-white fw-bold px-4 py-2 rounded-pill" style="background-color: #007bff;">Disponibilidade de Água</a>
+        <a href="energia.html" class="btn text-dark fw-bold px-4 py-2 rounded-pill" style="background-color: #ffc107;">Energia Rural</a>
+        <a href="producao.html" class="btn text-white fw-bold px-4 py-2 rounded-pill" style="background-color: #006400;">Produção</a>
+      </div>
     </div>
-    <div class="footer ">
-        <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col-md-6">
+        <h2>A Zona Rural</h2>
+        <p>
+          A conexão entre a zona rural e as cidades é muitas vezes subestimada. A produção agrícola envolve um trajeto complexo que passa por agricultores, transportadores e comerciantes até chegar às mesas urbanas. Falta de informação pode gerar preconceitos e desperdício. É importante aproximar esses mundos, promovendo feiras, campanhas educativas e valorizando o trabalho de quem cultiva os alimentos que consumimos todos os dias.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img class="img-agro img-fluid br-3" src="assets/image/plantacaoboaperifa.jpg"
+          alt="Imagem representativa de plantação.">
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <!-- Cards com conteúdo expansível -->
+    <div class="row pt-5">
+      <h3 class="text-center pb-3">Saiba um pouco mais sobre cada área.</h3>
+
+      <!-- Água -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="./assets/image/agualago.png" class="card-img-top" alt="Imagem de água">
+          <div class="card-body text-center">
+            <h5 class="card-title">Disponibilidade de Água</h5>
+            <button class="btn btn-primary w-100 toggle-btn" data-target="info-agua">Mais</button>
+            <div id="info-agua" class="collapse mt-2">
+              <p class="card-text">
+                A água é essencial para a agricultura e a saúde rural. O acesso a fontes de água potável e sistemas de irrigação eficientes é crucial para a sustentabilidade das comunidades.
+              </p>
+              <a href="agua.html" class="btn btn-primary w-100 mt-2">Saiba mais sobre:</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Energia -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="./assets/image/hidro.png" class="card-img-top" alt="Imagem de energia">
+          <div class="card-body text-center">
+            <h5 class="card-title">Energia Renovável</h5>
+            <button class="btn btn-warning w-100 toggle-btn" data-target="info-energia">Mais</button>
+            <div id="info-energia" class="collapse mt-2">
+              <p class="card-text">
+                A energia é fundamental para o desenvolvimento rural. Fontes renováveis, como solar e eólica, melhoram a qualidade de vida e impulsionam a produção agrícola e a industrialização local.
+              </p>
+              <a href="energia.html" class="btn btn-warning w-100 mt-2">Saiba mais sobre:</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produção -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="./assets/image/agricola.jpg" class="card-img-top" alt="Imagem de produção">
+          <div class="card-body text-center">
+            <h5 class="card-title">Produção e Transformação</h5>
+            <button class="btn btn-success w-100 toggle-btn" data-target="info-producao">Mais</button>
+            <div id="info-producao" class="collapse mt-2">
+              <p class="card-text">
+                A produção rural abrange o cultivo de alimentos e a criação de animais, enquanto a industrialização transforma esses produtos em itens consumíveis. Investimentos em tecnologia e processamento são essenciais para agregar valor e aumentar a competitividade.
+              </p>
+              <a href="producao.html" class="btn btn-success w-100 mt-2">Saiba mais sobre:</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrossel -->
+    <div id="carouselExample" class="carousel slide pt-4 pb-3">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/image/Energy (1).gif" class="img-slide d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/image/Energy.gif" class="img-slide d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo cidade.</p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const targetEl = document.getElementById(targetId);
+        const isCollapsed = !targetEl.classList.contains('show');
+        new bootstrap.Collapse(targetEl, { toggle: true });
+        if (isCollapsed) {
+          button.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

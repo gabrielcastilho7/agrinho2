@@ -1,42 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energia Rural e Renovável</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="agua.css" />
 </head>
 <body>
-     <!--Apresentação do tema-->
-     <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Festejando Conexão Campo Cidade</h3>
+
+  <!-- Botão voltar -->
+<a href="index.html" class="bloco-voltar">VOLTAR</a>
+
+  <!-- Cabeçalho -->
+  <section class="cabecalho">
+    <h1>AGRINHO</h1>
+    <h3>Disponibilidade de Água</h3>
+  </section>
+
+  <!-- Conteúdo principal -->
+  <div class="container pt-5 pb-5">
+
+    <!-- Seção Exemplo -->
+    <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>A Água Começa no Campo</h3>
+          <p>
+Nas cidades, a água está em tudo: no banho, na comida, na limpeza, nos hospitais, nas escolas e até na diversão. Mas o que muitos esquecem é que grande parte dessa água vem do meio rural. São as nascentes, rios, represas e aquíferos localizados no campo que abastecem as torneiras urbanas. Quando cuidamos da água no campo, estamos garantindo saúde, bem-estar e qualidade de vida para quem vive na cidade.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+Preservar essas fontes é essencial para manter o equilíbrio entre natureza e desenvolvimento.
+          </div>
+        </div>
+        <img src="assets/image/aguaboa.jpg" class="img-fluid rounded" alt="Painéis solares no campo" />
+      </div>
     </section>
 
-    <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
-                    </li>
-                </ul>
-            </div>
+        <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>A Água como Base da Produção Rural</h3>
+          <p>
+No campo, a água é essencial para a produção e para a vida. Ela serve para irrigar plantações, alimentar os animais, processar alimentos e também para o uso doméstico das famílias rurais. Sem água em quantidade e qualidade adequadas, a agricultura e a pecuária enfrentam grandes dificuldades.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+Para evitar isso, muitos agricultores adotam práticas como a captação da água da chuva, a proteção das nascentes e o uso eficiente dos sistemas de irrigação.
+          </div>
         </div>
-    </nav>
-    
+        <img src="assets/image/lago.png" class="img-fluid rounded" alt="Painéis solares no campo" />
+      </div>
+    </section>
+
+        <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>Cuidar Com A Contaminação</h3>
+          <p>
+O uso de agrotóxicos sem os devidos cuidados pode causar sérios impactos no meio ambiente, contaminando rios, nascentes e os lençóis freáticos — que são fontes importantes de água potável tanto para o campo quanto para a cidade. Quando esses produtos químicos infiltram no solo, eles atingem as águas subterrâneas, colocando em risco a saúde das pessoas, dos animais e o equilíbrio dos ecossistemas.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+Por isso, é fundamental utilizar os agrotóxicos de forma responsável, com orientação técnica adequada, respeito às normas ambientais e incentivo a práticas agrícolas mais sustentáveis. Proteger a água significa também proteger a vida, garantindo um futuro saudável para o campo e para as áreas urbanas.
+          </div>
+        </div>
+        <img src="assets/image/aguavaca.png" class="img-fluid rounded" alt="Painéis solares no campo" />
+      </div>
+    </section>
+
+    <!-- Outras seções podem seguir o mesmo padrão -->
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo-cidade.</p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function mostrarTexto(el) {
+      const parent = el.closest('section').querySelector('.extra-text');
+      parent.style.display = 'block';
+      el.style.display = 'none';
+    }
+  </script>
+
 </body>
 </html>

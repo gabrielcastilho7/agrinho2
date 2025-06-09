@@ -1,0 +1,100 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 30px;
+}
+
+.cabecalho h3 {
+  color: rgb(25, 150, 0);
+}
+
+.footer {
+  background-color: black;
+  color: rgb(25, 150, 0);
+  text-align: center;
+  padding: 5px;
+}
+
+/* Botão de voltar */
+.bloco-voltar {
+  position: fixed;
+  top: 120px; /* ajusta abaixo do cabeçalho */
+  right: 20px;
+  background-color: rgb(110, 110, 110);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
+}
+
+.bloco-voltar:hover {
+  background-color: #703e3e;
+}
+
+/* Layout de texto + imagem lado a lado */
+.texto-lado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.texto-lado > div {
+  flex: 1 1 55%;
+  max-width: 600px;
+}
+
+.texto-lado img {
+  flex: 1 1 40%;
+}
+
+
+/* Imagem com tamanho correto */
+.img-certa {
+  width: 400px;
+  height: auto;
+}
+
+/* Botão circular de expandir texto */
+.botao-circular {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(25, 150, 0);
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+}
+
+.botao-circular:hover {
+  background-color: rgb(25, 150, 0);
+}
+
+.extra-text {
+  display: none;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.extra-wrapper {
+  margin-top: 10px;
+}

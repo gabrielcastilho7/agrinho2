@@ -1,42 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produção e Transformação</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="producao.css" />
 </head>
 <body>
-      <!--Apresentação do tema-->
-      <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Festejando Conexão Campo Cidade</h3>
+
+  <!-- Botão voltar -->
+<a href="index.html" class="bloco-voltar">VOLTAR</a>
+
+  <!-- Cabeçalho -->
+  <section class="cabecalho">
+    <h1>AGRINHO</h1>
+    <h3>Produção e Transformação</h3>
+  </section>
+
+  <!-- Conteúdo principal -->
+  <div class="container pt-5 pb-5">
+
+    <!-- Seção 1 -->
+    <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>Produção na Lavoura</h3>
+          <p>
+            Produzir alimentos no campo vai muito além de simplesmente plantar sementes na terra. O agricultor precisa ter conhecimento sobre o tipo de solo, as estações do ano, o comportamento das plantas e as técnicas mais adequadas para cada cultura.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+            É essencial saber quando preparar o terreno, o melhor período para o plantio e o momento certo da colheita. Além disso, é necessário acompanhar o clima, prevenir pragas e doenças, utilizar insumos de forma equilibrada e adotar práticas que preservem a fertilidade do solo e a biodiversidade local.
+          </div>
+        </div>
+        <img src="assets/image/agriban.jpg" class="img-certa rounded" alt="Lavoura" />
+      </div>
     </section>
 
-    <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Seção 2 -->
+    <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>Maquinário Agrícola Moderno</h3>
+          <p>
+            Os maquinários agrícolas modernos são fundamentais para aumentar a eficiência e a produtividade no campo. Equipamentos como tratores, colheitadeiras automatizadas e tecnologias avançadas tornam as tarefas mais rápidas e menos exaustivas.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+            Apesar dos altos custos, o uso dessas máquinas é indispensável para atender à demanda alimentar e garantir competitividade. Além disso, elas contribuem para a sustentabilidade, reduzindo o esforço físico e otimizando os recursos naturais.
+          </div>
         </div>
-    </nav>
-    
+        <img src="assets/image/agrim2.jpg" class="img-certa rounded" alt="Maquinário agrícola" />
+      </div>
+    </section>
+
+    <!-- Seção 3 -->
+    <section class="mb-5">
+      <div class="texto-lado">
+        <div>
+          <h3>Da Colheita ao Consumidor</h3>
+          <p>
+            Após a colheita, o transporte dos produtos agrícolas até as cidades é uma etapa fundamental que exige planejamento logístico. Caminhões refrigerados garantem a conservação dos alimentos até seu destino final.
+          </p>
+          <div class="extra-wrapper">
+            <button class="botao-circular" onclick="mostrarTexto(this)">\/</button>
+          </div>
+          <div class="extra-text">
+            Rota, velocidade e manuseio são decisivos para evitar perdas. A logística influencia diretamente no preço dos produtos e, quando eficiente, beneficia toda a sociedade com alimentos frescos e acessíveis.
+          </div>
+        </div>
+        <img src="assets/image/agrimaq.jpg" class="img-certa rounded" alt="Distribuição agrícola" />
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo-cidade.</p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function mostrarTexto(el) {
+      const parent = el.closest('section').querySelector('.extra-text');
+      parent.style.display = 'block';
+      el.style.display = 'none';
+    }
+  </script>
+
 </body>
 </html>
